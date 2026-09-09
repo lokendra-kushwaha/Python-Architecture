@@ -43,7 +43,7 @@ class Matrix:
         """
         matrix_view = '\n'
         for i in range(0, self.col*self.row, self.col):
-            row = [f"{element:^2}" for element in self.num[i: i+self.col]]
+            row = [f"{element:^3}" for element in self.num[i: i+self.col]]
             matrix_view += '[' + ' '.join(row) + "]\n"
         return matrix_view
     
